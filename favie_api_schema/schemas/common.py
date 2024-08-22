@@ -140,7 +140,7 @@ WEBPAGE_EXCLUDE_SITES = [
 ]
 
 
-class SragLLM(Enum):
+class RagLLM(Enum):
     """
     llm platform
     """
@@ -155,7 +155,7 @@ class LLMPlatform(Enum):
     """
 
     PPLX = "pplx"
-    SRAG = "srag"
+    RAG = "rag"
 
 
 class ItemType(Enum):

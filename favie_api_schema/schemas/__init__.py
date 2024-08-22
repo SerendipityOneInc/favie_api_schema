@@ -5,6 +5,6 @@ from favie_api_schema.schemas.middle_step import *
 from favie_api_schema.schemas.product_detail import *
 from favie_api_schema.schemas.product_search_result import *
 from favie_api_schema.schemas.search_request import *
-from favie_api_schema.schemas.srag_common import *
+from favie_api_schema.schemas.rag_common import *
 from favie_api_schema.schemas.video_detail import *
 from favie_api_schema.schemas.video_search_result import *
