@@ -292,6 +292,7 @@ class SessionStartQuestionResult(BaseResponse):
         show_question: Optional[str] = None
         username: Optional[str] = None
         avatar: Optional[str] = None
+        tag: Optional[str] = None
 
     questions: Optional[list[Question]] = None
 
