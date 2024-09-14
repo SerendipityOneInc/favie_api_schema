@@ -217,6 +217,9 @@ class ProductDetail(ProductBase):
 
     amazon_choice: Optional[AmazonChoice] = None  # only for amazon
 
+    source: Optional[str] = None
+    source_icon: Optional[str] = None
+
     class Config:
         """
         Config
