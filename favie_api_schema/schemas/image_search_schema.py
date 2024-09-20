@@ -12,6 +12,7 @@ class ImageSearchRequest(BaseModel):
     """
 
     image_url: str
+    top_k: Optional[int] = 1
 
 
 
@@ -20,7 +21,6 @@ class ImageSearchResponse(BaseModel):
     Image Search Response
     """
 
-    image_url: Optional[str] = None
-    bbox: Optional[list[list[int]]] = None
+    image_url: Optional[list[str]] = None
 
     
