@@ -21,6 +21,14 @@ class ImageSearchResponse(BaseModel):
     Image Search Response
     """
 
-    image_url: Optional[list[str]] = None
+    class ImageDetail(BaseModel):
+        
+        """
+        Image detail
+        """
 
+        image_url: Optional[list[str]] = None
+        bbox: Optional[list[int]] = None
+    
+    image_list: Optional[list[ImageDetail]] = None
     
