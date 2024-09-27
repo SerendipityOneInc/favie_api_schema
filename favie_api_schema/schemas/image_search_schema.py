@@ -29,6 +29,7 @@ class ImageSearchResponse(BaseModel):
 
         image_url: Optional[list[str]] = None
         bbox: Optional[list[int]] = None
+        score: Optional[list[float]] = None
     
     image_list: Optional[list[ImageDetail]] = None
     
