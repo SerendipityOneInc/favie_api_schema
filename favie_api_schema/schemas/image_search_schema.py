@@ -13,6 +13,7 @@ class ImageSearchRequest(BaseModel):
 
     image_url: str
     top_k: Optional[int] = 1
+    embed_model: Optional[str] = None
 
 
 
