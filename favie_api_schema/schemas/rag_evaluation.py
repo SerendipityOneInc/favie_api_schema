@@ -5,6 +5,8 @@ from typing import Optional
 from pydantic import BaseModel
 
 
+
+
 class ContextRelevanceCompareResponse(BaseModel):
     query: Optional[str] = ""
     rewrite_query_1: Optional[dict] = None

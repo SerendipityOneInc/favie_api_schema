@@ -14,3 +14,4 @@ class RAGQueryRewriteRequest(BaseModel):
     history_message: Optional[list[dict]] = None
     query_rewrite_prompt: Optional[str] = None
 
+
