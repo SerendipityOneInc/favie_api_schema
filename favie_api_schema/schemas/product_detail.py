@@ -181,6 +181,7 @@ class ProductBase(BaseModel):
     title: str
     link: Optional[str] = None
     short_title: Optional[str] = None
+    query: Optional[str] = None  # query for product
 
 
 class ProductDetail(ProductBase):
