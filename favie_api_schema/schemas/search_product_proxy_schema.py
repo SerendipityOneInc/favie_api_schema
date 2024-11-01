@@ -4,9 +4,9 @@ from typing import Any, Dict, List, Optional
 from pydantic import BaseModel
 
 
-class SearchProxyRequest(BaseModel):
+class SearchProductProxyRequest(BaseModel):
     """
-    Search Proxy Request
+    Search Product Proxy Request
     """
     query: str
     top_k: Optional[int] = 1
@@ -17,9 +17,9 @@ class SearchProxyRequest(BaseModel):
 
 
 
-class SearchProxyResponse(BaseModel):
+class SearchProductProxyResponse(BaseModel):
     """
-    Search Proxy Response
+    Search Product Proxy Response
     """
     results: List[Dict[str, Any]]
     
