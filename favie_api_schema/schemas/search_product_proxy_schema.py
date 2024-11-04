@@ -13,7 +13,7 @@ class SearchProductProxyRequest(BaseModel):
     source: Optional[str] = None
     ranker: Optional[str] = None
     site: Optional[str] = None
-    direct_link: Optional[str] = "False"
+    direct_link: Optional[str] = "false"
 
 
 
