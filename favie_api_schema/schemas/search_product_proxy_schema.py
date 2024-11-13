@@ -14,6 +14,7 @@ class SearchProductProxyRequest(BaseModel):
     ranker: Optional[str] = None
     site: Optional[str] = None
     direct_link: Optional[str] = "false"
+    filters: Optional[dict] = None
 
 
 
