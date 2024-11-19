@@ -4,7 +4,7 @@ schemas
 
 # pylint: disable=too-few-public-methods
 from enum import Enum
-from typing import Optional
+from typing import Any, Dict, Optional
 
 from pydantic import BaseModel
 
@@ -222,6 +222,9 @@ class ProductDetail(ProductBase):
     source_icon: Optional[str] = None
 
     search_engine: Optional[str] = None
+    f_tags: Optional[list[str]] = None
+    f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
+    f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
 
     class Config:
         """
