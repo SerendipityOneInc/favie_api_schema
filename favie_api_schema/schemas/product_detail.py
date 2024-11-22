@@ -226,6 +226,7 @@ class ProductDetail(ProductBase):
     f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
     f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
     tags: Optional[Dict[str, Any]] = None
+    image_tags: Optional[Dict[str, Any]] = None
 
     class Config:
         """
