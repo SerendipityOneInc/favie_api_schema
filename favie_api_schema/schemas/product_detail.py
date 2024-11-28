@@ -223,6 +223,7 @@ class ProductDetail(ProductBase):
 
     search_engine: Optional[str] = None
     f_tags: Optional[list[str]] = None
+    f_cate_tags: Optional[str] = None
     f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
     f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
     tags: Optional[Dict[str, Any]] = None
