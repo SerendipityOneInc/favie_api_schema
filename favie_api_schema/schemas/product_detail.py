@@ -168,6 +168,17 @@ class BuyBoxWinner(BaseModel):
     price: Optional[Price] = None
     shipping: Optional[Shipping] = None
 
+class FavieImageItem(BaseModel):
+    link: Optional[str] = None
+    f_link: Optional[str] = None
+    desc: Optional[str] = None
+    format: Optional[str] = None
+    category: Optional[str] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
+    size: Optional[int] = None
+    size_type: Optional[str] = None
+    status: Optional[int] = None
 
 class ProductBase(BaseModel):
     """
@@ -226,6 +237,7 @@ class ProductDetail(ProductBase):
     f_cate_tags: Optional[str] = None
     f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
     f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
+    f_image_list: Optional[List[FavieImageItem]] = None
     tags: Optional[Dict[str, Any]] = None
     image_tags: Optional[Dict[str, Any]] = None
 
