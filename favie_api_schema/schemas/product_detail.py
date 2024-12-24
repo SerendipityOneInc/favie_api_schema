@@ -4,7 +4,7 @@ schemas
 
 # pylint: disable=too-few-public-methods
 from enum import Enum
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, List
 
 from pydantic import BaseModel
 
