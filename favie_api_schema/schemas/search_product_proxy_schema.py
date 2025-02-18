@@ -17,6 +17,7 @@ class SearchProductProxyRequest(BaseModel):
     filters: Optional[dict] = None
     ha3_contain_sites: Optional[list[str]] = None
     ha3_nocontain_sites: Optional[list[str]] = None
+    models: Optional[list[str]] = None
 
 
 
