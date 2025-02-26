@@ -18,7 +18,7 @@ class SearchProductProxyRequest(BaseModel):
     ha3_contain_sites: Optional[list[str]] = None
     ha3_nocontain_sites: Optional[list[str]] = None
     models: Optional[list[str]] = None
-
+    use_internal_LLM: Optional[bool] = False
 
 
 class SearchProductProxyResponse(BaseModel):
