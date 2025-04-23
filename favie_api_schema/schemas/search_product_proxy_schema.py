@@ -12,6 +12,8 @@ class SearchProductProxyRequest(BaseModel):
     top_k: Optional[int] = 1
     source: Optional[str] = None
     ranker: Optional[str] = None
+    budget: Optional[str] = "0"
+    brand: Optional[str] = None
     site: Optional[str] = None
     direct_link: Optional[str] = "false"
     filters: Optional[dict] = None
