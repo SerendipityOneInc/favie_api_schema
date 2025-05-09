@@ -8,8 +8,8 @@ class SearchProductProxyRequest(BaseModel):
     """
     Search Product Proxy Request
     """
-    user_id: str
-    task_id: str
+    user_id: Optional[str] = ""
+    task_id: Optional[str] = ""
     query: str
     top_k: Optional[int] = 1
     source: Optional[str] = None
